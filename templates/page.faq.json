@@ -1,0 +1,400 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "76b6c074-5102-466c-bd00-d013336737e7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15680636256392__76b6c074-5102-466c-bd00-d013336737e7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently asked questions",
+            "main_heading": "",
+            "main_heading_wave": false,
+            "main_heading_wave_color": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--15680636256392__76b6c074-5102-466c-bd00-d013336737e7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clear your doubts about the timeless art of henna. This curated section answers your queries about our products, Mihenna's origins, and tips for a magical experience!<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--15680636256392__76b6c074-5102-466c-bd00-d013336737e7-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Send Us an Email",
+            "button_link": "mailto:info@mihenna.com",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15680636256392__76b6c074-5102-466c-bd00-d013336737e7-heading-1",
+        "template--15680636256392__76b6c074-5102-466c-bd00-d013336737e7-text-1",
+        "template--15680636256392__76b6c074-5102-466c-bd00-d013336737e7-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_24769_3.png",
+        "wave_top_image": false,
+        "svg_show_wave": false,
+        "svg_color": "#ffffff",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "custom_class": "faq_main_wrap_banner",
+        "show_arrow_icon": false,
+        "show_dotted_icon": false,
+        "change_dotted_icon": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 36,
+        "mobile_padding_top": 16,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "ccd0c002-5005-4363-87d7-1e819ef4d211": {
+      "type": "faq-main",
+      "blocks": {
+        "35bf396f-c9da-47f4-abd6-dadf5bc409ed": {
+          "type": "category",
+          "settings": {
+            "title": "General"
+          }
+        },
+        "e0f28844-35de-4e35-a4fc-5fc6dc004bb4": {
+          "type": "question",
+          "settings": {
+            "question": "What is the vision for the company?",
+            "answer": "<p>Our passion is to help young women achieve the self-confidence to become henna body art goddesses through our variety of design options and our all-natural henna paste. Learn more on our <a href=\"https:\/\/mihenna.com\/pages\/about-us\">About Us <\/a>page.<\/p>"
+          }
+        },
+        "2942dbb1-a1c3-49bd-82b8-117dc616ef0e": {
+          "type": "question",
+          "settings": {
+            "question": "When was it started?",
+            "answer": "<p>2018<\/p>"
+          }
+        },
+        "311472d8-b446-4075-909f-3c008baf6d37": {
+          "type": "question",
+          "settings": {
+            "question": "Who is the owner?",
+            "answer": "<p>Mihenna was founded by Shalina Jaffer, an Indian, first-generation American, and lover of all things henna! Read more about how Shalina got started with Mihenna on our <a href=\"https:\/\/mihenna.com\/pages\/about-us\">About Us <\/a>page.<\/p>"
+          }
+        },
+        "afd52bea-ca55-4644-9e38-e8e9a787a192": {
+          "type": "question",
+          "settings": {
+            "question": "How is henna made?",
+            "answer": "<p>The leaves of the Lawsonia inermis plant are dried and crushed into a fine powder. The henna powder is combined with a liquid to turn it into a paste that will adhere to your skin and with an acid to release the dye. At Mihenna, we use fresh distilled water, organic eucalyptus oil, organic tea tree oil and organic sugar. Our ingredients are all-natural with no hidden chemicals to keep your skin safe and healthy.<\/p>"
+          }
+        },
+        "23f76677-d1a2-4fc8-a842-c389dd247c8f": {
+          "type": "question",
+          "settings": {
+            "question": "Are your products chemical free?",
+            "answer": "<p>We are USDA Organic Certified Company and all of our henna products are organic, chemical free and skin safe. Our Ecocert USDA Certification can be found below:<\/p>",
+            "image": "shopify:\/\/shop_images\/mihenna-USDA-certification_3b7e2338-bf50-466c-824c-826e30f35745_1.png"
+          }
+        },
+        "ad10c1c1-e8c1-45a7-943a-f96c6a6b9f94": {
+          "type": "question",
+          "settings": {
+            "question": "Is henna tattoo permanent?",
+            "answer": "<p>No. Henna tattoos will only last between 1 and 3 weeks, depending on location and how well you care for them. Because henna is a dye that absorbs into your skin cells, the faster you lose skin cells, the faster your henna stain will disappear. We’ve got some tips to make it last.<\/p><ul><li>Before you get your henna paste applied, exfoliate. Get off as much dead skin from the area as you can.<\/li><li>Wash the area to remove your natural oils, and then fully dry your skin.<\/li><li>Avoid water for the first few hours. Don’t jump in the shower right after you get your tattoo.<\/li><li>After you have your gorgeous henna, do not exfoliate! Your dead skin cells will naturally fall off, but try to avoid encouraging them.<\/li><li>Moisturize the area to keep your skin healthier for longer. We recommend using coconut oil to keep the area luscious.<\/li><\/ul>"
+          }
+        },
+        "824ed6ce-ed62-4769-ada0-dee853e263f9": {
+          "type": "question",
+          "settings": {
+            "question": "Can henna expire?",
+            "answer": "<p>Henna paste will naturally become less effective over time. The stain won’t be as dark, and ingredients may separate depending on what the henna is made out of. Fortunately, there is no health hazard or danger related to expired henna. You can easily extend the life of your henna paste by storing it in the freezer for up to 3 months.<\/p>"
+          }
+        },
+        "a7e1df3d-6862-4788-861b-f6673b09faa1": {
+          "type": "question",
+          "settings": {
+            "question": "What henna is safe?",
+            "answer": "<p>This frequently asked question is more complex than it seems due to misconceptions about henna. Let’s break it down into a few different areas - pure henna, brown henna paste, and black henna.<\/p><ul><li>Pure henna a dye is made from the leaves of the Lawsonia inermis plant. The leaves are dried and crushed into a powder. The henna plant has a very low potential for skin allergies, according to the Dermatology Online Journal. However, this powder alone isn’t going to stick to your skin or create beautiful designs.<\/li><li>Brown henna paste is made by mixing the powder with at least one type of liquid in order to make it adhere to your skin. Most reactions are due to these additional ingredients. It’s important to read the ingredients and test the henna paste in a small area if you have sensitive skin.<\/li><li>Black henna is a misnomer and does not actually contain any powder from the Lawsonia inermis plant. It often contains p-phenylenediamine (PPD), also known as coal tar. PPD is considered a contact allergen and has a long list of symptoms you can read more about on DermNet. Black henna is not common in the US, Canada, or the UK, but it can be found abroad. Be sure to only get henna tattoos when the paste is brown or reddish-brown, earthy color.<\/li><\/ul><p>At Mihenna, our organic henna paste is made from fresh distilled water, eucalyptus oil, tea tree oil, and sugar. While it is unlikely that the majority of people would have any skin reaction, please test on a small patch if you have frequent skin sensitivity or irritation.<\/p><p>But even natural henna paste should not be consumed. If you, your child, or your pet ingests henna paste, you will likely have an upset stomach and experience diuretic effects.<\/p>"
+          }
+        },
+        "ea0891b4-13ac-46c8-92bf-446bb95bb9e8": {
+          "type": "question",
+          "settings": {
+            "question": "How to make henna last longer?",
+            "answer": "<ul><li>Before you get your henna paste applied, exfoliate. Get off as much dead skin from the area as you can.<\/li><li>Wash the area to remove your natural oils, and then fully dry your skin.<\/li><li>Avoid water for the first few hours. Don’t jump in the shower right after you get your tattoo.<\/li><li>After you have your gorgeous henna, do not exfoliate! Your dead skin cells will naturally fall off, but try to avoid encouraging them.<\/li><li>Moisturize the area to keep your skin healthier for longer. We recommend using coconut oil to keep the area luscious.<\/li><\/ul>"
+          }
+        },
+        "2c41cda3-cef9-4ef9-a024-c5d52b834b0a": {
+          "type": "question",
+          "settings": {
+            "question": "How was henna originated?",
+            "answer": "<p>Lawsonia inermis, the plant that creates henna, grows in northern Africa and also western and southern Asia. Cultures in Africa - especially Morocco, the Middle East, Pakistan, and India all developed uses for this plant. From medicines made out of the roots to dye for hair and skin made out of the dried, powdered leaves, Lawsonia inermis rose in popularity. Different traditions developed in these regions, but almost everyone ended up using the dye to stain designs on their hands and feet. Henna tattoos have distinct motifs based on where they originated. Read more about the history of henna in our previous posts.<\/p>"
+          }
+        },
+        "608dfd02-e25a-4c8a-a925-656f01613ff5": {
+          "type": "question",
+          "settings": {
+            "question": "Are henna freckles safe?",
+            "answer": "<p>If you use organic henna, then yes! Creating fake freckles with henna helps you to avoid the sun damage that can come with trying to darken your real freckles, and they last longer than creating freckles with makeup that you need to reapply every day.<\/p>"
+          }
+        },
+        "48f2d8cc-c90d-4b51-9be2-8716d8f92267": {
+          "type": "question",
+          "settings": {
+            "question": "Why are my henna freckles orange?",
+            "answer": "<p>Henna stains look orange when you first reveal them, but during the first twenty-four hours, they will continue to darken to a nice, earthy brown color. Avoid washing your face for the first 5 hours to allow the stain to set in.<\/p>"
+          }
+        },
+        "2bdaa4ea-24b6-436f-aa98-d6d796587a65": {
+          "type": "question",
+          "settings": {
+            "question": "Why aren't my henna freckles working?",
+            "answer": "<p>Many factors affect the quality of henna stain - skin composition, temperature, humidity, and aftercare. If after 24 hours your henna freckles are not showing, we recommend thoroughly exfoliating, washing, and drying your face to remove all oils and makeup. In an air conditioned room, allow the henna to stay on your face for longer (up to 12 hours). Do not apply water to your face for 4 - 5 hours after removing the henna. Regularly moisturize to help the stains last longer.<\/p>"
+          }
+        },
+        "daccfc27-5dd0-40a0-9b5b-3ab8a2ddddd8": {
+          "type": "question",
+          "settings": {
+            "question": "How to apply henna freckles?",
+            "answer": "<p>First wash and dry your face to have a clean canvas. Then apply dots of henna paste across your nose and cheeks in varying sizes and placements. Allow the paste to dry for 2 to 12 hours, depending on how dark you want your fake freckles to be. Use coconut oil to remove the dried henna paste and simultaneously moisturize your skin. The henna freckles will darken for 24 hours. Finally you’ll have that sun-kissed look everyone is craving!<\/p>"
+          }
+        },
+        "f544735b-fe37-4151-b0c1-b26d6f35d3bb": {
+          "type": "question",
+          "settings": {
+            "question": "Will henna freckles work on darker skin tones?",
+            "answer": "<p>Unfortunately on very deep skin tones the henna freckles will not show up.<\/p>"
+          }
+        },
+        "0acd84cd-8c45-45c4-96b2-42eb758d1fcd": {
+          "type": "question",
+          "settings": {
+            "question": "Henna freckles do's and don'ts",
+            "answer": "<p>Make sure to apply your freckles in a scattered pattern for a natural look; Applying the freckles in sets of three will help accomplish this. Also be sure to add some freckles to your forehead and chin to complete the sun-kissed look. Do not place your freckles in a grid pattern, this will make the freckles look fake and you more doll-like, unless that’s what you’re going for!<\/p>"
+          }
+        },
+        "9252976d-d7ea-4ffa-bd93-f315f7885f69": {
+          "type": "question",
+          "settings": {
+            "question": "How long do henna freckles last?",
+            "answer": "<p>2 to 6 days with proper care. Moisturizing daily and avoiding exfoliation will help your henna freckles last longer. We recommend using coconut oil when exposing to water to increase the longevity of your henna freckles.<\/p>"
+          }
+        },
+        "1a21380a-e6ad-42a0-bda3-e3125ab6203e": {
+          "type": "category",
+          "settings": {
+            "title": "Instructions"
+          }
+        },
+        "d00c7c67-2348-4805-b5ff-36763d8c652a": {
+          "type": "question",
+          "settings": {
+            "question": "Henna Cone Instructions",
+            "answer": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/Henna_Cone_Inside.pdf?v=1597220066\" target=\"_blank\" title=\"Henna Instructions PDF Document\">Download Henna Cone Instructions here <\/a><\/p>",
+            "top_image": "shopify:\/\/shop_images\/henna-cone-instructions_e2ec9960-7518-4031-aa47-04ac0e09a0d7_1.png"
+          }
+        },
+        "7dda9e2e-18ec-426f-b2b0-83ac25c86ae0": {
+          "type": "question",
+          "settings": {
+            "question": "Henna Freckle Kit Instructions",
+            "answer": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/mihenna_freckle_kit_instructions_inside.pdf?v=1599402918\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/mihenna_freckle_kit_instructions_inside.pdf?v=1599402918\">Download Freckle Kit Instructions here<\/a><\/p>",
+            "top_image": "shopify:\/\/shop_images\/mihenna_freckle_kit_instructions_inside_1_1.webp"
+          }
+        },
+        "0fee9aa3-6464-47ec-b6fe-a4a8855cc05f": {
+          "type": "question",
+          "settings": {
+            "question": "Sticker Stencil Instructions",
+            "answer": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/henna-stencils-instructions-card.png?v=1653196520\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/henna-stencils-instructions-card.png?v=1653196520\">Download Sticker Stencil Instructions here<\/a><\/p>",
+            "top_image": "shopify:\/\/shop_images\/henna-stencils-instructions-card_1_1.webp"
+          }
+        },
+        "36ace0a7-a80d-4ad6-8e4d-e06bea595375": {
+          "type": "question",
+          "settings": {
+            "question": "Henna Powder Kit Instructions",
+            "answer": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/mihenna_powder_kit_inside.jpg?v=1599403212\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0014\/5532\/5261\/files\/mihenna_powder_kit_inside.jpg?v=1599403212\">Download Henna Powder Instructions here<\/a><\/p>",
+            "top_image": "shopify:\/\/shop_images\/mihenna_powder_kit_inside_1_1.webp"
+          }
+        },
+        "2608782f-1a50-4a01-83fb-092882b8c74c": {
+          "type": "question",
+          "settings": {
+            "question": "Henna Powder Instructions for Hair Dye",
+            "answer": "<p><strong>What You Need:<\/strong><\/p><ul><li>1 cup of distilled warm water or freshly brewed black tea<\/li><li>Glass bowl<\/li><li>Spoon<\/li><li>Cling wrap<\/li><li>Plastic gloves<\/li><li>Shower cap<\/li><\/ul><p><strong>Steps<\/strong><\/p><ul><li>Pour desired amount of henna powder into your bowl and slowly mix in water or tea until pudding like consistency is reached.<\/li><li>Mix paste until clumps are gone. Cover with cling wrap and let sit for 8 - 10 hours; this will allow for full dye release.<\/li><li>Once ready, apply henna paste directly to clean, damp hair with gloved hands.<\/li><li>Section your hair and starting from your roots, work the paste evenly through to the ends.<\/li><li>Gather your hair on top of your head and cover completely with a plastic shower cap.<\/li><li>After 3 hours, thoroughly rinse your hair with cool water to remove all henna. Wash until water runs clear (do not use shampoo).<\/li><li>Use a blow dryer for 10 - 15 minutes.<\/li><li>After 24 hours, you can use color safe shampoo to lock in color. Avoid oil based conditioners for one week.<\/li><li>Hair color will darken and reach full intensity within 48 - 72 hours.<\/li><\/ul><p><strong>Pro Tips:<\/strong><\/p><ul><li>We recommend testing a small sample of hair before full application.<\/li><li>Hair dye mixture is not effective for body tattoos.<\/li><li>Do not combine with chemical hair dye. Wait at least one month after a chemical dye before using henna on hair. If hair has been previously dyed, it may take up to 2-3 applications for henna dye to provide best results.<\/li><li>Avoid contact with eyes and mouth. If dye get into your eyes, flush with water and contact a physician if irritation continues.<\/li><li>Wear an old shirt or cover up with an old towel to avoid henna stains on clothing.<\/li><li>You can wrap a towel on top of your shower cap to trap more heat and help with the dye transfer.<\/li><li>Henna dye gives red undertones to dark or black hair.<\/li><li>Henna dye transforms blonde and grey hair to red or orange.<\/li><\/ul>"
+          }
+        },
+        "c7fef5c9-22b0-4d5b-b99d-bcec98be75b3": {
+          "type": "question",
+          "settings": {
+            "question": "Henna Powder Instructions for Tattoos",
+            "answer": "<p><strong>What You Need:<\/strong><\/p><ul><li>5ml of essential oil; for best results use tea tree, lavender, or eucalyptus<\/li><li>3 tbsp of sugar; best is organic cane sugar<\/li><li>1 cup of distilled water at room temp<\/li><li>Glass bowl<\/li><li>Spoon<\/li><li>Cling wrap<\/li><li>Henna cone or application bottle<\/li><\/ul><p><strong>Steps:<\/strong><\/p><ul><li>Stir 100g of henna powder and 3 tbsp of sugar in your bowl<\/li><li>Add 1 cup of water and mix into a thick paste. Cover with cling wrap and let sit for 30 minutes; this will allow the water to absorb<\/li><li>Add 5ml of essential oil. Mix thoroughly until all lumps are gone and you’ve reached a pudding-like consistency<\/li><li>Cover again with cling wrap and store in a warm place for at least 6 hours (inside cabinet or above fridge). This time will allow full dye release to occur.<\/li><li>Mix henna paste one more time and transfer into henna cone or application bottle.<\/li><\/ul><p><strong>Pro Tips:<\/strong><\/p><ul><li>We recommend testing in a small area first in case of a potential allergic reaction to the essential oils.<\/li><li>Do not apply body tattoo henna mixture to hair. It can cause your hair and scalp to dry out.<\/li><\/ul>"
+          }
+        },
+        "259e0b2b-bcdf-4094-a24d-d0ef66ae6ae3": {
+          "type": "category",
+          "settings": {
+            "title": "Wholesale"
+          }
+        },
+        "2327ac22-f13d-4928-86a1-06deff94fe68": {
+          "type": "question",
+          "settings": {
+            "question": "Wholesale inquiries?",
+            "answer": "<p>Please email <a href=\"mailto:info@mihenna.com\">info@mihenna.com <\/a>for more information.<\/p>"
+          }
+        },
+        "750072df-a4bf-4e90-934c-e14edf50a39e": {
+          "type": "question",
+          "settings": {
+            "question": "Looking to have Mihenna at your next party or event?",
+            "answer": "<p>Yes! We can prepare party packs for your next gathering! Please email <a href=\"mailto:info@mihenna.com\">info@mihenna.com <\/a>for more information.<\/p>"
+          }
+        },
+        "c15b40bb-63b7-4dc3-b7e8-0e1b4a1be8ec": {
+          "type": "category",
+          "settings": {
+            "title": "Shipping\/returns"
+          }
+        },
+        "605d52f4-9c14-4a12-9d2e-153bec514d0d": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take for my henna products to ship?",
+            "answer": "<p>Prior to shipping, it takes 1 - 2 business days (excluding weekends and holidays) for orders to be processed as our henna paste is freshly made to ensure the best quality. Once your order ships, a shipping confirmation email will be sent containing the tracking number. Learn more on our <a href=\"https:\/\/mihenna.com\/pages\/shipping\">Shipping page.<\/a><\/p>"
+          }
+        },
+        "59d4e40e-6c27-4a96-a030-dbdeca65fd12": {
+          "type": "question",
+          "settings": {
+            "question": "How do I track my order?",
+            "answer": "<p>Your tracking number will be emailed along with shipping confirmation. Click the link in the email to watch your henna’s journey to your doorstep.<\/p>"
+          }
+        },
+        "7f8ca6b9-74a7-40f3-83b5-67812501dd97": {
+          "type": "question",
+          "settings": {
+            "question": "Can I update my shipping address after I’ve placed my order?",
+            "answer": "<p>If you have not received a shipping confirmation email yet, please email us at <a href=\"mailto:info@mihenna.com\">info@mihenna.com <\/a>with your order number and the updated shipping address. We will do our best to change the address before the order ships. However, if the order has already shipped, we are unable to make any changes.<\/p>"
+          }
+        },
+        "c2a2767d-2a9c-4e00-9c3b-e3d3c5c7a546": {
+          "type": "question",
+          "settings": {
+            "question": "Will I be charged duties for my order?",
+            "answer": "<p>U.S. customers will not be charged for import taxes or duties. International orders may incur import taxes or duties based on the value of the order and the tax-free threshold. Payment of any duties and taxes is the responsibility of the recipient and these fees are collected at the time of delivery. More information can be obtained by contacting your local customs office.<\/p>"
+          }
+        },
+        "a3778437-a8b6-4991-bfa0-87194e2d4781": {
+          "type": "question",
+          "settings": {
+            "question": "What carriers do you use?",
+            "answer": "<p>U.S. orders are shipped using USPS. For International orders, we use USPS First-Class International (Globegistics). Once the package arrives in the destination country, it is handled by the local mail provider (i.e. Royal Mail for U.K., Australia Post for Australia).<\/p>"
+          }
+        },
+        "2638459e-ca42-4336-999d-d9bc235ccdaf": {
+          "type": "question",
+          "settings": {
+            "question": "Can I return a product if I’m not satisfied?",
+            "answer": "<p>You can return any unused Mihenna products within 30 days from the day it was shipped. Returned items must be in new condition and in their original packaging. Approved returns will be refunded to the original form of payment. Please note that your original shipping charges will not be refunded. Returns made after 30 days of the order shipment date may be eligible for a refund in the form of an online store credit. We do not accept returns for orders over 90 days old. Learn more on our <a href=\"https:\/\/mihenna.com\/pages\/return-policy\">Returns page.<\/a><\/p>"
+          }
+        },
+        "71b7229a-c0cf-4eca-b4a3-19d452d50ed3": {
+          "type": "question",
+          "settings": {
+            "question": "How do I place a return?",
+            "answer": "<p>Send us an email at <a href=\"mailto:info@mihenna.com\">info@mihenna.com<\/a> with the following information:<\/p><ul><li>Full Name<\/li><li>Order number<\/li><li>Name and quantity of item(s) you wish to return<\/li><li>Short description of the return reason(s)<\/li><\/ul><p>Once approved by our team, you will need to send the item back to 742 Intracoastal Drive, Fort Lauderdale FL 33304.Once we receive it, we will email you when your return has been processed!<\/p>"
+          }
+        },
+        "99fd4b39-0dfb-4d5f-9e23-5a9005ffc3eb": {
+          "type": "question",
+          "settings": {
+            "question": "When will I receive my refund?",
+            "answer": "<p>Once the returned item(s) have been received and inspected, you’ll receive a notification email regarding the approval or rejection of the return. If approved, the refund will be processed and a credit will automatically be applied to your original method of payment.<\/p><p>Please note that refunds can take up to 10 business days to be reflected back into your account. Please confirm with your bank if you do not see your credit after the tenth business day.<\/p>"
+          }
+        },
+        "8291be9d-aff2-4705-9cb8-84e5f4a44d20": {
+          "type": "question",
+          "settings": {
+            "question": "How do I make a return if I’m outside the US?",
+            "answer": "<p>At this time, we do not accept international returns. If you are truly unhappy with the product or have any concerns with your order, please email us at <a href=\"mailto:info@mihenna.com\">info@mihenna.com<\/a>, and we would be happy to assist you personally.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "35bf396f-c9da-47f4-abd6-dadf5bc409ed",
+        "e0f28844-35de-4e35-a4fc-5fc6dc004bb4",
+        "2942dbb1-a1c3-49bd-82b8-117dc616ef0e",
+        "311472d8-b446-4075-909f-3c008baf6d37",
+        "afd52bea-ca55-4644-9e38-e8e9a787a192",
+        "23f76677-d1a2-4fc8-a842-c389dd247c8f",
+        "ad10c1c1-e8c1-45a7-943a-f96c6a6b9f94",
+        "824ed6ce-ed62-4769-ada0-dee853e263f9",
+        "a7e1df3d-6862-4788-861b-f6673b09faa1",
+        "ea0891b4-13ac-46c8-92bf-446bb95bb9e8",
+        "2c41cda3-cef9-4ef9-a024-c5d52b834b0a",
+        "608dfd02-e25a-4c8a-a925-656f01613ff5",
+        "48f2d8cc-c90d-4b51-9be2-8716d8f92267",
+        "2bdaa4ea-24b6-436f-aa98-d6d796587a65",
+        "daccfc27-5dd0-40a0-9b5b-3ab8a2ddddd8",
+        "f544735b-fe37-4151-b0c1-b26d6f35d3bb",
+        "0acd84cd-8c45-45c4-96b2-42eb758d1fcd",
+        "9252976d-d7ea-4ffa-bd93-f315f7885f69",
+        "1a21380a-e6ad-42a0-bda3-e3125ab6203e",
+        "d00c7c67-2348-4805-b5ff-36763d8c652a",
+        "7dda9e2e-18ec-426f-b2b0-83ac25c86ae0",
+        "0fee9aa3-6464-47ec-b6fe-a4a8855cc05f",
+        "36ace0a7-a80d-4ad6-8e4d-e06bea595375",
+        "2608782f-1a50-4a01-83fb-092882b8c74c",
+        "c7fef5c9-22b0-4d5b-b99d-bcec98be75b3",
+        "259e0b2b-bcdf-4094-a24d-d0ef66ae6ae3",
+        "2327ac22-f13d-4928-86a1-06deff94fe68",
+        "750072df-a4bf-4e90-934c-e14edf50a39e",
+        "c15b40bb-63b7-4dc3-b7e8-0e1b4a1be8ec",
+        "605d52f4-9c14-4a12-9d2e-153bec514d0d",
+        "59d4e40e-6c27-4a96-a030-dbdeca65fd12",
+        "7f8ca6b9-74a7-40f3-83b5-67812501dd97",
+        "c2a2767d-2a9c-4e00-9c3b-e3d3c5c7a546",
+        "a3778437-a8b6-4991-bfa0-87194e2d4781",
+        "2638459e-ca42-4336-999d-d9bc235ccdaf",
+        "71b7229a-c0cf-4eca-b4a3-19d452d50ed3",
+        "99fd4b39-0dfb-4d5f-9e23-5a9005ffc3eb",
+        "8291be9d-aff2-4705-9cb8-84e5f4a44d20"
+      ],
+      "settings": {
+        "show_categories": true,
+        "color_scheme": "scheme-309c2373-3700-4bf4-868c-813953c5156b",
+        "padding_top": 224,
+        "padding_bottom": 120,
+        "mobile_padding_top": 82,
+        "mobile_padding_bottom": 56,
+        "wave_top_image": true,
+        "svg_color": "#e2f3f1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "76b6c074-5102-466c-bd00-d013336737e7",
+    "ccd0c002-5005-4363-87d7-1e819ef4d211"
+  ]
+}

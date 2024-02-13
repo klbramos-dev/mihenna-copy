@@ -1,0 +1,193 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "37c8567e-5392-4ee6-93ff-14ef82f51af6": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
+        "bea4a051-f63b-43d2-a9d8-64c0bad5510a": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.short_description | metafield_tag }}",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "32cc73e1-89da-49ae-ba4d-de80d87f4dfa": {
+          "type": "productingredientsinfo",
+          "repeater": "{{ product.metafields.custom.product_ingredients_and_info.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.heading.value }}",
+            "image": "{{ block.repeater.icon.value }}",
+            "url": "{{ block.repeater.link.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "37c8567e-5392-4ee6-93ff-14ef82f51af6",
+        "bea4a051-f63b-43d2-a9d8-64c0bad5510a",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "32cc73e1-89da-49ae-ba4d-de80d87f4dfa"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "color_scheme": "background-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 56,
+        "padding_bottom": 0,
+        "mobile_padding_top": 16,
+        "mobile_padding_bottom": 0
+      }
+    },
+    "da229c4a-dc4e-4166-a2fb-5ae1920652e6": {
+      "type": "product-description",
+      "settings": {
+        "wave_top_image": true,
+        "svg_color": "#fff1f5",
+        "color_scheme": "scheme-abf93d7f-d155-4f9f-85fb-53affee0622a",
+        "padding_top": 32,
+        "padding_bottom": 72,
+        "mobile_padding_top": 55,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "9e5aa9f7-476c-4855-b4c8-bec080d1bbca": {
+      "type": "product-deserve",
+      "blocks": {
+        "ccba0786-5ad1-4ecd-809b-91f734ff75e3": {
+          "type": "shop",
+          "repeater": "{{ product.metafields.custom.deserve_mihenna.value }}",
+          "settings": {
+            "icon-name": "{{ block.repeater.heading.value }}",
+            "icon-image": "{{ block.repeater.icon.value }}",
+            "icon_link": "{{ block.repeater.link.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "ccba0786-5ad1-4ecd-809b-91f734ff75e3"
+      ],
+      "settings": {
+        "main-heading": "You Deserve Mihenna",
+        "svg_show_wave": true,
+        "svg_color": "#ffffff",
+        "color_scheme": "scheme-56e5cab6-4eb4-41ab-8e1e-c89876772324",
+        "padding_top": 72,
+        "padding_bottom": 200,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "accff450-7efe-4c64-8ce4-31066f59d386": {
+      "type": "customer-review-product",
+      "settings": {
+        "text": "Customer Reviews",
+        "padding_top": 56,
+        "padding_bottom": 72,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56,
+        "color_scheme": "",
+        "custom_class": "product_review_main_wrap"
+      }
+    },
+    "3bfb5998-f2c6-4e18-9f58-315b9626342c": {
+      "type": "product-faq",
+      "blocks": {
+        "eeed78cd-65c2-47ed-8df7-6ae5578c02b9": {
+          "type": "faq",
+          "repeater": "{{ product.metafields.custom.faq.value }}",
+          "settings": {
+            "question": "{{ block.repeater.question.value }}",
+            "answer": "<p>{{ block.repeater.answer | metafield_tag }}<\/p>",
+            "image": "{{ block.repeater.image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "eeed78cd-65c2-47ed-8df7-6ae5578c02b9"
+      ],
+      "settings": {
+        "main-heading": "Frequently asked questions",
+        "desktop-image": "shopify:\/\/shop_images\/Image.png",
+        "color_scheme": "scheme-6c7564df-d8b1-4cee-a7c3-722bff8d919c",
+        "discover": "**Discover more FAQs",
+        "link_text": "here",
+        "link": "shopify:\/\/pages\/faqs",
+        "padding_top": 104,
+        "padding_bottom": 104,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-a5ca6b1e-9f4e-4c81-aeae-4776fe7b207a",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 56,
+        "padding_bottom": 56,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "da229c4a-dc4e-4166-a2fb-5ae1920652e6",
+    "9e5aa9f7-476c-4855-b4c8-bec080d1bbca",
+    "accff450-7efe-4c64-8ce4-31066f59d386",
+    "3bfb5998-f2c6-4e18-9f58-315b9626342c",
+    "related-products"
+  ]
+}

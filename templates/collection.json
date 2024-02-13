@@ -1,0 +1,175 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "show_collection_second": "{{ collection.metafields.custom.collection_banner_image.value }}",
+        "show_collection_mobile": "{{ collection.metafields.custom.collection_mobile_image.value }}",
+        "color_scheme": "background-1"
+      }
+    },
+    "087c2185-f8d6-480c-b13a-19246e71bc32": {
+      "type": "collection-by-collection",
+      "blocks": {
+        "3aabbd96-5150-4770-9c43-fa382524a71f": {
+          "type": "shop",
+          "settings": {
+            "collection": "kits",
+            "category-name": "Henna Tattoo Kits",
+            "category-link": "shopify:\/\/collections\/kits"
+          }
+        },
+        "d32b3322-308a-4df1-abbe-45ff508da6ed": {
+          "type": "shop",
+          "settings": {
+            "collection": "apparel",
+            "category-name": "Apparel",
+            "category-link": "shopify:\/\/collections\/apparel"
+          }
+        },
+        "c041374a-8e54-4463-a675-8a5e0c233661": {
+          "type": "shop",
+          "settings": {
+            "collection": "best-sellers",
+            "category-name": "Best Sellers",
+            "category-link": "shopify:\/\/collections\/best-sellers"
+          }
+        },
+        "24096e59-1a0f-4d32-a3d7-24deeb166fb7": {
+          "type": "shop",
+          "settings": {
+            "collection": "accessories",
+            "category-name": "Essentials",
+            "category-link": "shopify:\/\/collections\/accessories"
+          }
+        },
+        "c918475a-6d05-472f-922f-84c95c502891": {
+          "type": "shop",
+          "settings": {
+            "collection": "henna-powder",
+            "category-name": "Henna Powder",
+            "category-link": "shopify:\/\/collections\/henna-powder"
+          }
+        },
+        "2254a5e0-7195-4bf1-a79f-9b2d9da551c1": {
+          "type": "shop",
+          "settings": {
+            "collection": "henna-tattoo-stencils",
+            "category-name": "Henna Stencils",
+            "category-link": "shopify:\/\/collections\/henna-tattoo-stencils"
+          }
+        },
+        "b94b77c3-aafd-4b29-8706-16f45bef617f": {
+          "type": "shop",
+          "settings": {
+            "collection": "frontpage",
+            "category-name": "Our Favorites",
+            "category-link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "shop_gtepQf": {
+          "type": "shop",
+          "settings": {
+            "collection": "jagua",
+            "category-name": "",
+            "category-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3aabbd96-5150-4770-9c43-fa382524a71f",
+        "d32b3322-308a-4df1-abbe-45ff508da6ed",
+        "c041374a-8e54-4463-a675-8a5e0c233661",
+        "24096e59-1a0f-4d32-a3d7-24deeb166fb7",
+        "c918475a-6d05-472f-922f-84c95c502891",
+        "2254a5e0-7195-4bf1-a79f-9b2d9da551c1",
+        "b94b77c3-aafd-4b29-8706-16f45bef617f",
+        "shop_gtepQf"
+      ],
+      "settings": {
+        "heading": "Shop By"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "6b6d2f4b-63e1-4f48-86a0-f199cfc8b6e9": {
+          "type": "grid_content",
+          "settings": {
+            "show_promo_block": true,
+            "position": 4,
+            "desktop_content_position": "center",
+            "review": "Amazing! I get so many compliments on these and they are identical to real freckles if using it for that purpose—lasts days and so convenient I do them every 3-4 days!",
+            "author_name": "Elayna Fuller",
+            "review_product_name": "review left on Henna Cone"
+          }
+        },
+        "f3756885-a4b7-4f6a-9ba9-b6d94d70e262": {
+          "type": "grid_content",
+          "settings": {
+            "show_promo_block": true,
+            "position": 11,
+            "desktop_content_position": "center",
+            "review": "Perfect way to get started—this kit comes with all you need! My new favorite thing!!! My daughter and I love it!",
+            "author_name": "Michelle Kasten",
+            "review_product_name": "review left on Best Seller Henna Kit"
+          }
+        }
+      },
+      "block_order": [
+        "6b6d2f4b-63e1-4f48-86a0-f199cfc8b6e9",
+        "f3756885-a4b7-4f6a-9ba9-b6d94d70e262"
+      ],
+      "settings": {
+        "products_per_page": 5000,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "864e3a1f-d3d0-4491-8823-7032c6fb78f8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15623558004872__864e3a1f-d3d0-4491-8823-7032c6fb78f8-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.collection_bottom_description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--15623558004872__864e3a1f-d3d0-4491-8823-7032c6fb78f8-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 28,
+        "custom_class": "collection_bottom_desc"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "087c2185-f8d6-480c-b13a-19246e71bc32",
+    "product-grid",
+    "864e3a1f-d3d0-4491-8823-7032c6fb78f8"
+  ]
+}

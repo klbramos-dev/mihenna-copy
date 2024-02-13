@@ -1,0 +1,67 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "5c8055b4-9090-49be-a4be-8f75812b259f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mihenna_white_Logo.svg",
+            "image_width": 210,
+            "alignment": "",
+            "content": "We are your one-stop shop for all your DIY henna supplies. You'll find our unique sticker stencils, premium henna paste, and pre-made or customizable henna tattoo kits with everything you need for your next henna experience!"
+          }
+        },
+        "d73b98e6-071d-4cd9-a3ee-2277ef9f350a": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "footer-2-new"
+          }
+        },
+        "eb3f2d8c-9326-4bbf-bc87-ca80d5254085": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Learn",
+            "menu": "footer-one"
+          }
+        },
+        "027b6370-5bbb-4eef-9aef-887bbd5e469b": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Subscribe to our newsletter",
+            "news_text": "<p>Stay in the loop with Mihenna! Join our community of henna lovers to receive exclusive promotions, updates, and a sneak peak into what we do!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5c8055b4-9090-49be-a4be-8f75812b259f",
+        "d73b98e6-071d-4cd9-a3ee-2277ef9f350a",
+        "eb3f2d8c-9326-4bbf-bc87-ca80d5254085",
+        "027b6370-5bbb-4eef-9aef-887bbd5e469b"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d44e5c20-2f04-4b26-ada3-f835de34cea3",
+        "menu": "footer-copyright-menu",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 88,
+        "padding_bottom": 36,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

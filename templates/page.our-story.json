@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "8e25f97b-aedf-47a6-a565-0a4a02a6272c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15675889614984__8e25f97b-aedf-47a6-a565-0a4a02a6272c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "main_heading": "Unleash your creativity,<br><span>with safe & easy henna body art<\/span>",
+            "main_heading_wave": true,
+            "main_heading_wave_color": "#fee5ed",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15675889614984__8e25f97b-aedf-47a6-a565-0a4a02a6272c-heading-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_24769_2.png",
+        "wave_top_image": false,
+        "svg_show_wave": false,
+        "svg_color": "#ffffff",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "custom_class": "story_main_banner_wrap",
+        "show_arrow_icon": false,
+        "show_dotted_icon": false,
+        "change_dotted_icon": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "mobile_padding_top": 16,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "77e5ddfa-a9c0-4d57-9ba5-5d0d78dfc982": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15675889614984__77e5ddfa-a9c0-4d57-9ba5-5d0d78dfc982-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Letter from the Owner",
+            "main_heading": "",
+            "main_heading_wave": false,
+            "main_heading_wave_color": "#1773b0",
+            "heading_size": "h1"
+          }
+        },
+        "template--15675889614984__77e5ddfa-a9c0-4d57-9ba5-5d0d78dfc982-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hi! I’m Shalina Jaffer Collins, founder of Mihenna. I am an Indian, first-generation American, and lover of all things diy, henna and fun!<\/p><p>Growing up in South Florida, my immigrant parents continued the tradition of henna application for all of our celebrations and rites of passage. As I got older, I came to realize how much all my melting pot of friends loved the art form of henna application but felt it was not something they knew where to buy or how to make. <\/p><p>Through that realization, the concept of Mihenna was born – a one stop shop for all your diy henna and body art needs! Bringing premium ingredients and gorgeous artwork to a realm lacking in quality and design aesthetics. Our goal at Mihenna is to give everyone the opportunity to experience the joy that henna & jagua body art can bring. A chance to be creative and self-express in a safe and temporary way! <\/p><p>Thank you for your interest in Mihenna and checking out our site! <\/p><p>Sincerely,<\/p><p>SJC<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15675889614984__77e5ddfa-a9c0-4d57-9ba5-5d0d78dfc982-heading-1",
+        "template--15675889614984__77e5ddfa-a9c0-4d57-9ba5-5d0d78dfc982-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_24771.png",
+        "wave_top_image": true,
+        "svg_show_wave": false,
+        "svg_color": "#d6eddf",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-a5ca6b1e-9f4e-4c81-aeae-4776fe7b207a",
+        "color_scheme": "scheme-a5ca6b1e-9f4e-4c81-aeae-4776fe7b207a",
+        "custom_class": "content_wrap_one",
+        "show_arrow_icon": false,
+        "show_dotted_icon": false,
+        "change_dotted_icon": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 224,
+        "padding_bottom": 120,
+        "mobile_padding_top": 82,
+        "mobile_padding_bottom": 56
+      }
+    },
+    "c0f386af-44dd-48b5-a41b-80f81102db06": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15675889614984__c0f386af-44dd-48b5-a41b-80f81102db06-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Who we are",
+            "heading_size": "h1"
+          }
+        },
+        "template--15675889614984__c0f386af-44dd-48b5-a41b-80f81102db06-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mihenna is based in South Florida with connections throughout the world. Our sticker stencils find inspiration everywhere, and our <a href=\"https:\/\/mihenna.com\/collections\/accessories\/products\/henna-cone\" target=\"_blank\" title=\"https:\/\/mihenna.com\/collections\/accessories\/products\/henna-cone\">organic henna paste<\/a> is sourced from India. Global connection helps us stay true to the roots of henna as body art, which originated in South Asia, the Middle East, and Africa. Mihenna aims to continue this ancient tradition and modernize it for today’s women.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15675889614984__c0f386af-44dd-48b5-a41b-80f81102db06-heading-1",
+        "template--15675889614984__c0f386af-44dd-48b5-a41b-80f81102db06-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 56,
+        "custom_class": "story_who_wrap"
+      }
+    },
+    "034c8d15-ce63-4d6a-aa51-28bb359c4a73": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_24772_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "custom_class": "story_single_image_wrap"
+      }
+    },
+    "2dbfbcb5-6e48-4df6-aa51-7c32dabeb825": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15675889614984__2dbfbcb5-6e48-4df6-aa51-7c32dabeb825-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "What we do",
+            "heading_size": "h1"
+          }
+        },
+        "template--15675889614984__2dbfbcb5-6e48-4df6-aa51-7c32dabeb825-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our <a href=\"https:\/\/mihenna.com\/collections\/henna-tattoo-stencils\" target=\"_blank\" title=\"https:\/\/mihenna.com\/collections\/henna-tattoo-stencils\">sticker stencils<\/a> and pre-made henna paste are next step in the evolution of henna body art. The art of henna still carries on the rituals of decorating body and hair for celebrations and rites of passage in order to bring blessings of luck, joy, and beauty. Today henna is also used freely for self-expression on any occasion so you look and feel good about yourself.<\/p><p>Before Mihenna <a href=\"https:\/\/mihenna.com\/collections\/kits\" target=\"_blank\" title=\"https:\/\/mihenna.com\/collections\/kits\">henna tatoo kits<\/a>, application to hands and feet would take hours with a trained henna artist drawing on the body art by hand. Mihenna makes this ancient art form accessible to everyone with easy-to-use sticker stencils and pre-made, premium henna paste. DIY henna kits are the way of the future!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15675889614984__2dbfbcb5-6e48-4df6-aa51-7c32dabeb825-heading-1",
+        "template--15675889614984__2dbfbcb5-6e48-4df6-aa51-7c32dabeb825-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 52,
+        "custom_class": "content_do_wrap"
+      }
+    },
+    "aa70121b-cbb5-4878-a4d9-2924de8b3ec3": {
+      "type": "multirow",
+      "blocks": {
+        "template--15675889614984__aa70121b-cbb5-4878-a4d9-2924de8b3ec3-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Illustration.png",
+            "caption": "",
+            "heading": "Healthy alternative",
+            "text": "<p>Mihenna offers only the purest ingredients for the application of henna and jagua body art! Our henna powder and pre mixed cones are USDA Certified Organic and our all-natural jagua gel is ethically sourced and made in small batches. Instead of using harsh chemicals and dyes to color your hair or create faux freckles, come to Mihenna for the healthiest alternatives. Safe for all skin types and only the cleanest ingredients, shipped in recyclable packaging so you can feel good all around! <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15675889614984__aa70121b-cbb5-4878-a4d9-2924de8b3ec3-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OBJECTS.png",
+            "caption": "",
+            "heading": "Unleash creativity",
+            "text": "<p>What better way to self express and show self love than with Mihenna body art! We're your one stop shop for everything needed to have a successful temporary tattoo experience. Whether you're looking for a traditional red tattoo or a more realistic black tattoo, Mihenna has you covered. Our applicator bottle and tips make it easy to draw and let your imagination run wild! Or get a little help with our wide selection of sticker stencils for gorgeous results every time! <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15675889614984__aa70121b-cbb5-4878-a4d9-2924de8b3ec3-row-3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame.png",
+            "caption": "",
+            "heading": "Share & Enjoy",
+            "text": "<p>Mihenna is here for the cultural sharing of this beautiful art form of self adornment for celebrations, rites of passage, and just pure joy; understanding and appreciation of this tradition and its history can be found in our various blogs. Now, the best way to enjoy Mihenna is with your family and friends! Get the girl gang together and have a henna party or do jagua tattoos with the kids for a fun family activity. The possibilities are endless! <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15675889614984__aa70121b-cbb5-4878-a4d9-2924de8b3ec3-row-1",
+        "template--15675889614984__aa70121b-cbb5-4878-a4d9-2924de8b3ec3-row-2",
+        "template--15675889614984__aa70121b-cbb5-4878-a4d9-2924de8b3ec3-row-3"
+      ],
+      "settings": {
+        "heading": "Our mission",
+        "heading_position": "center",
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "scheme-309c2373-3700-4bf4-868c-813953c5156b",
+        "row_color_scheme": "scheme-309c2373-3700-4bf4-868c-813953c5156b",
+        "mobile_content_alignment": "center",
+        "padding_top": 48,
+        "padding_bottom": 120,
+        "mobile_padding_top": 56,
+        "mobile_padding_bottom": 0,
+        "custom_class": "mission_multirow_wrap",
+        "wave_top_image": true,
+        "svg_color": "#e2f3f1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8e25f97b-aedf-47a6-a565-0a4a02a6272c",
+    "77e5ddfa-a9c0-4d57-9ba5-5d0d78dfc982",
+    "c0f386af-44dd-48b5-a41b-80f81102db06",
+    "034c8d15-ce63-4d6a-aa51-28bb359c4a73",
+    "2dbfbcb5-6e48-4df6-aa51-7c32dabeb825",
+    "aa70121b-cbb5-4878-a4d9-2924de8b3ec3"
+  ]
+}

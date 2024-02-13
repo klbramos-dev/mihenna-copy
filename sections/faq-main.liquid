@@ -1,0 +1,199 @@
+
+<style>
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+
+{%- if section.settings.wave_top_image -%}
+  <div class="image-with-text__waveImage image-with-text__waveImage--topImageWave">
+    {% render 'wave-image', color: section.settings.svg_color %}
+  </div>
+{%- endif -%}        
+<div class="main-faq-section-s section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="tr-accordion-main-section">
+      <div class="tr-accordion-btn">
+        {%- assign categories_blocks = section.blocks | where: 'type', 'category' -%}
+        {%- if section.settings.show_categories and categories_blocks.size > 0 -%}
+          {% for block in section.blocks %}
+            {% if block.settings.title != blank %}
+              <div class="btn-acc">
+                <a class="mnt-ac{% if forloop.index == 1 %} active{% endif %}" href="#block-{{ block.id }}">{{ block.settings.title }}</a>
+              </div>
+            {% endif  %}
+          {% endfor %}
+        {%- endif -%}
+      </div>
+      <div class="tr-accordion-main-acc">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'category' -%}
+              {%- if block.settings.title != blank -%}
+                <p id="block-{{ block.id }}" class="faq__category h4" {{ block.shopify_attributes }}>
+                  {{- block.settings.title -}}
+                </p>
+              {%- endif -%}
+            {%- when 'question' -%}
+              <div class="tr-accordion">
+                <div class="tr-accordion-item">
+                  <button>
+                    <span class="tr-accordion-title">
+                      {{ block.settings.question }}
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="tr-accordion-content">
+                    {% if block.settings.top_image != blank %}
+                      <div class="tr-accordion-image tr-accordion-topImage">
+                        <img src="{{ block.settings.top_image | img_url: 'master' }}" width="100%" height="100%" alt="{{ block.settings.top_image.alt }}">
+                      </div>
+                    {% endif %}
+                    <div class="tr-accordion-text">
+                      {{ block.settings.answer }}
+                    </div>
+                    {% if block.settings.image != blank %}
+                      <div class="tr-accordion-image">
+                        <img src="{{ block.settings.image | img_url: 'master' }}" width="100%" height="100%" alt="{{ block.settings.image.alt }}">
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.faq_main.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_categories",
+      "label": "t:sections.faq_main.settings.show_categories.label",
+      "default": true
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 224
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.mobile_padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.mobile_padding_bottom",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "wave_top_image",
+      "default": false,
+      "label": "t:sections.image-with-text.settings.wave_top_image.label"
+    },
+    {
+      "type": "color",
+      "id": "svg_color",
+      "label": "t:sections.image-with-text.settings.wave_color.label",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks":[
+    {
+      "type": "category",
+      "name": "t:sections.faq_main.blocks.category.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "t:sections.faq_main.blocks.category.settings.title.label"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "t:sections.faq_main.blocks.question.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "question",
+          "label": "t:sections.faq_main.blocks.question.settings.question.label"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "t:sections.faq_main.blocks.question.settings.answer.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "top_image",
+          "label": "t:sections.faq_main.blocks.question.settings.top_image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.faq_main.blocks.question.settings.image.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faq Main"
+    }
+  ]
+}
+{% endschema %}

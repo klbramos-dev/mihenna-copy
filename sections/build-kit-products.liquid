@@ -1,0 +1,286 @@
+{{ 'section-main-product-kit.css' | asset_url | stylesheet_tag }}
+{{ 'product-slider.css' | asset_url | stylesheet_tag }}
+{{ 'build-kits.css' | asset_url | stylesheet_tag }}
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+{{ 'build-kits-new.css' | asset_url | stylesheet_tag }}
+{{ 'pdp-tabs.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'build-kit.js' | asset_url }}" defer="defer"></script>
+
+ {% comment %}  {% assign maxKits = product.metafields.kits.value %} {% endcomment %}
+{% assign maxKits = product.metafields.custom.kits.value %} 
+{% assign usda_certified = false %}
+
+{% if product.metafields.my_fields.usda == true %}
+  {% assign usda_certified = true %}
+{% endif %}
+
+<div class="page-width">
+  <div id="build-kit-product" class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="grid__item product__media-wrapper">    
+      <div id="product-canvas-wrapper">
+        <h1 class="byk-title"> {{ product.title }} </h1>
+        <p class="kit-products">
+          {% for prod in collections.kits.products %}
+            {% if prod.handle contains "build" %}
+              {% if prod.metafields.kits.value == 4 %}
+                {% assign prodTitle = "Small Kit" %}
+              {% elsif prod.metafields.kits.value == 8 %}
+                {% assign prodTitle = "Large Kit" %}
+              {% else %}
+                {% assign prodTitle = prod.title %}
+              {% endif %}            			
+                <a {% if prod.handle == product.handle %}class="current-product"{% endif %} href="{{prod.url}}"><span class="kit-title">{{prodTitle}}</span></a>
+            {% endif %}
+          {% endfor %}
+        </p>
+        <div class="canvas-copy">
+          <p class="canvas-heading">Selected Stencils: <span id="leftCount">0</span> out of {{maxKits}} <button id="canvas-viewer">View Selections</button></p>
+          <p class="prod_price">{{ product.price_min | money }}</p>
+        </div>
+        <div id="product-canvas-inner-wrapper">
+          <div id="product-canvas">
+            <div id="selected-stencils" data-max="{{maxKits}}" 
+                data-flickity='{ 
+                              "cellAlign": "left", 
+                              "contain": true, 
+                              "wrapAround": true,
+                              "pageDots": false
+                              }'>
+              {% for i in (1..maxKits) %}
+                <div class="prod-wrap">
+                  <div id="stencil_{{i}}" class="empty">
+                    <button data-stencil-id="stencil_{{i}}">X</button>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div><!-- #product-canvas-inner-wrapper ends -->
+      </div><!-- #product-canvas-wrapper ends -->
+    </div>
+    <div class="product__info-wrapper grid__item">
+      <div class="product-single__meta">
+        <div class="product-style-filter">
+          <label for="stencil-kit-filters">Filter by Style:</label>
+          <select id="stencil-kit-filters">
+            <option selected value="all-styles">All</option>
+            <option value="design-style_floral">Floral</option>
+            <option value="design-style_geometric">Geometric</option>
+            <option value="design-style_mandala">Mandala</option>
+            <option value="design-style_modern">Modern</option>
+            <option value="design-style_rings">Rings</option>
+            <option value="design-style_traditional">Traditional</option>
+          </select>        
+        </div>  
+        	
+        <div id="product-filters">
+          <a href="#" data-selected="all-styles" class="active">All</a>
+          <a href="#" data-selected="design-style_floral">Floral</a>
+          <a href="#" data-selected="design-style_geometric">Geometric</a>
+          <a href="#" data-selected="design-style_mandala">Mandala</a>
+          <a href="#" data-selected="design-style_modern">Modern</a>
+          <a href="#" data-selected="design-style_rings">Rings</a>
+          <a href="#" data-selected="design-style_traditional">Traditional</a>                 
+        </div>  	
+        
+        <ul id="stencil-products-listings" class="all-styles">
+          {% for product in collections['henna-tattoo-stencils'].products %}
+            {% if product.available %}
+              <li data-product-name="{{product.title}}" class="all-styles {% for tag in product.tags %} {{tag | handleize}}{% endfor %}">
+                <span data-product="{{product.title}}" class="stencil-kit-images {% if product.images[1].src != blank %} image-rollover {% endif %}">
+                  <img src="{{product.featured_image.src | img_url: "medium"}}" loading="lazy" alt="{{product.featured_image.alt}}" class="primary-img" 
+                    width="200" height="200" />
+                  {% if product.images[1].src != blank %}
+                    <img src="{{product.images[1].src | img_url: "medium"}}" loading="lazy" alt="{{product.images[1].alt}}" class="secondary-img" width="200" height="200" />
+                  {% endif %}
+                </span>
+                <span>{{product.title}}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        {% capture "form_classes" -%}
+          product-form product-form-{{ section.id }}
+          {%- unless section.settings.show_variant_labels %} product-form--hide-variant-labels {% endunless %}
+          {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
+          {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+        {%- endcapture %}
+
+        {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+          {% unless product.has_only_default_variant %}
+            <div class="product-form__controls-group">
+              {% for option in product.options_with_values %}
+                <div class="selector-wrapper js product-form__item">
+                  <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
+                    {{ option.name }}
+                  </label>
+                  <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input"
+                    id="SingleOptionSelector-{{ forloop.index0 }}"
+                    data-index="option{{ forloop.index }}"
+                  >
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              {% endfor %}
+            </div>
+          {% endunless %}
+
+          <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}"
+                {%- if variant == current_variant %} selected="selected" {%- endif -%}
+              >
+                {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+              </option>
+            {% endfor %}
+          </select>
+      
+          {% comment %}
+            Listing Kit Count
+          {% endcomment %}
+          <div id="selected-stencils-kit">
+            {% for i in (1..maxKits) %} 
+              <input type="hidden" name="properties[Stencil_{{i}}]" id="final_stencil_{{i}}"  class="empty" />
+            {% endfor %}
+          </div>
+      
+          {% if section.settings.show_quantity_selector %}
+            <div class="product-form__controls-group">
+              <div class="product-form__item">
+                <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+                <input type="number" id="Quantity-{{ section.id }}"
+                  name="quantity" value="1" min="1" pattern="[0-9]*"
+                  class="product-form__input product-form__input--quantity" data-quantity-input
+                >
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
+            data-error-message-wrapper
+            role="alert"
+          >
+            <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+            <span class="product-form__error-message" data-error-message>Form Error</span>
+          </div>
+
+          <div class="product-form__controls-group product-form__controls-group--submit">
+            <div class="kit-product-btn-wrap product-form__item product-form__item--submit
+              {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+              {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+            >
+              <div class="product__price">
+                {{ product.price | money }}
+              </div>
+              
+              <button type="submit" name="add" disabled
+                aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                class=" button button--full-width{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"
+                data-add-to-cart>
+                <span data-add-to-cart-text>
+                  {% unless current_variant.available %}
+                    Sold out
+                  {% else %}
+                    Add to cart
+                  {% endunless %}
+                </span>
+              </button>
+              {% if section.settings.enable_payment_button %}
+                {{ form | payment_button }}
+              {% endif %}
+            </div>
+          </div>
+        {% endform %}
+       </div>
+
+      {%- comment -%}
+        Live region for announcing updated price and availability to screen readers
+      {%- endcomment -%}
+      <p class="visually-hidden" data-product-status
+        aria-live="polite"
+        role="status"
+      ></p>
+
+      {%- comment -%}
+        Live region for announcing that the product form has been submitted and the
+        product is in the process being added to the cart
+      {%- endcomment -%}
+      <p class="visually-hidden" data-loader-status
+        aria-live="assertive"
+        role="alert"
+        aria-hidden="true"
+      >{{ 'products.product.loader_label' | t }}</p>
+        
+      <div class="social-share">
+        {% render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
+      </div>
+    </div>
+  </div>
+  {%- render 'cart-notification' -%}
+
+  <div class="tab-wrapper">
+    <div class="tabs effect-1">
+      <!-- tab-title -->
+      <input type="radio" id="tab-1" name="tab-effect-1" checked="checked" />
+      <span>Description</span>
+
+      <input type="radio" id="tab-2" name="tab-effect-1" />
+      <span>Q&A</span>
+
+      <input type="radio" id="tab-3" name="tab-effect-1" />
+      <span>Reviews</span>
+
+      <!-- tab-content -->
+      <div class="tab-content">
+        <section id="tab-item-1">
+          {%- if product.description != blank -%}
+            <div class="product__description rte">
+              {{ product.description }}
+            </div>
+          {%- endif -%}
+        </section>
+        <section id="tab-item-2">
+          <div class="qa-content">
+            <p>
+              <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0014/5532/5261/files/henna-stencils-instructions.png?v=1599403730" width="100%" height="100%" alt="Henna Stencils Instrictions"/>
+            </p>
+            <p>
+              <a href="https://cdn.shopify.com/s/files/1/0014/5532/5261/files/henna-stencils-instructions.pdf?v=1599403723" target="_blank">Download Sticker Stencil Instructions here</a>
+            </p>
+          </div>
+        </section>
+        <section id="tab-item-3">
+          {% render 'product-reviews-new' %}
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Build Kit Product",
+  "tag": "section",
+  "class": "product-section spaced-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Build your kit"
+    }
+  ]
+}
+{% endschema %}

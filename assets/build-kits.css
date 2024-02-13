@@ -1,0 +1,152 @@
+/* Build Your Own Kit */
+#product-canvas {
+  width: 100%;
+}
+
+#stencil-products-listings {
+  display: var(--display-flex);
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c1c1c1;
+}
+
+#stencil-products-listings li {
+  width: 50%;
+  padding: 5px;
+  text-align: var(--text-center);
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  #stencil-products-listings li {
+    width: 33%;
+  }
+}
+
+.product-style-filter {
+  display: var(--display-flex);
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.product-style-filter label {
+  margin: 5px 8px 0 0;
+}
+
+#stencil-products-listings > li {
+  display: var(--display-none);
+}
+
+#stencil-products-listings.all-styles > .all-styles, 
+#stencil-products-listings.design-style_modern > .design-style_modern, 
+#stencil-products-listings.design-style_mandala > .design-style_mandala,
+#stencil-products-listings.design-style_rings > .design-style_rings, 
+#stencil-products-listings.design-style_geometric > .design-style_geometric, 
+#stencil-products-listings.design-style_floral > .design-style_floral, 
+#stencil-products-listings.design-style_traditional > .design-style_traditional {
+  display: var(--display-block);
+}
+
+.image-rollover {
+  display: var(--display-block);
+}
+
+#stencil-kit-filters:focus-visible {
+  box-shadow: none;
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  .image-rollover {
+    min-height: 160px;
+ }
+}
+
+.image-rollover .secondary-img {
+  display: var(--display-none);
+}
+
+.image-rollover .primary-img {
+  display: var(--display-block);
+  margin: 0;
+  width: 100%;
+}
+
+.cart-notification {
+  display: var(--display-none);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9;
+  background-color: var(--color-redish);
+  color: var(--color-white);
+  width: 100%;
+  text-align: var(--text-center);
+  padding: 3px;
+}
+
+#ProductSection-product-build-your-kit .kit-product-btn-wrap {
+  display: var(--display-flex);
+  max-width: none;
+}
+
+#ProductSection-product-build-your-kit .product-form .product-form__controls-group--submit {
+  width: 100%;
+}
+
+@media (max-width: 749px) {
+  #ProductSection-product-build-your-kit .product__price .price-item {
+    font-size: var(--font-p-22);
+ }
+}
+
+#build-kit-product .product-single__title {
+  text-align: var(--text-center);
+  margin-bottom: 0;
+}
+
+@media (min-width: 750px) {
+  #build-kit-product .product-single__title {
+    margin-bottom: 2rem;
+  }
+
+  #canvas-viewer {
+    display: var(--display-none);
+  }
+}
+
+.product-form__error-message-wrapper {
+  display: var(--display-none);
+}
+
+.kit-product-btn-wrap {
+  display: var(--display-flex);
+  align-items: var(--text-center);
+  justify-content: var(--justify-between);
+  padding: 20px 0;
+}
+
+.product__price {
+  font-size: var(--font-p-36);
+  color: var(--color-pink);
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+@media (max-width: 750px) {
+  .kit-product-btn-wrap {
+    flex-wrap: wrap;
+  }
+
+  #stencil-kit-filters {
+    height: 40px;
+    padding: 10px;
+  }
+
+  .template-product #selected-stencils .prod-wrap,
+  .kit-product-btn-wrap {
+    padding: 0;
+  }
+}

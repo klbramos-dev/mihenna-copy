@@ -1,0 +1,42 @@
+{%- if section.blocks.size > 0 -%}
+  <ul class="collection-grid-content" style=display:none;>
+    {%- for block in section.blocks -%}
+      {% if block.settings.show_promo_block %}
+        {% if collection.all_products_count < block.settings.position %}{% continue %}{% endif %}
+        <li id="collection-grid-{{ block.id }}" class="grid-product review-grid-item-wrapper grid__item grid-item-block grid-banner content--{{ block.settings.desktop_content_position }} collection-grid-{{ block.id }}" data-order="{{ block.settings.position }}">
+          <style>
+            #collection-grid-{{ block.id }} .block-link,
+            .collection-grid-{{ block.id }} {
+              background: #E2F3F1;
+              box-shadow: none;
+            }
+          </style> 
+          <div class="block-link{% if block.settings.desktop_content_position == "left" %} block-link--left{% elsif block.settings.desktop_content_position == "center" %} block-link--center{% elsif block.settings.desktop_content_position == "right" %} block-link--right{% endif %}">
+            <div class="block-content-info">
+              <ul class="review-rating-star">
+                {% render 'review-stars' %}
+              </ul>
+              {%- if block.settings.review != blank -%}
+              <h2 class="review-list-wrap">
+                {{ block.settings.review }}
+              </h2>
+              {% endif %} 
+              <div class="review-meta">
+                {%- if block.settings.author_name != blank -%}
+                  <h2 class="review-author-name">
+                    {{ block.settings.author_name }}
+                  </h2>
+                {% endif %} 
+                {%- if block.settings.review_product_name != blank -%}
+                  <p class="review-product-name">
+                    {{ block.settings.review_product_name }}
+                  </p>
+                {% endif %} 
+              </div>            
+            </div>
+          </div>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

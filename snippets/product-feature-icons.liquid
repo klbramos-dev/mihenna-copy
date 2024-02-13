@@ -1,0 +1,22 @@
+<div class="deserve-col">
+  <div class="deserve-content">
+    {% if icon %}
+      <div class="deserve-imag-box">
+        <img src="{{ icon | img_url : "master" }}" width="100%" height="100%" alt="Icon">
+      </div>
+    {% endif %}
+    {% if heading %}
+      <div class="deserv-text-box">
+        <p>
+          {% if link %}
+            <a href="{{ link }}">
+          {% endif %}
+            {{ heading}}
+          {% if link  %}
+            </a>
+          {% endif %}
+        </p>
+      </div>
+    {% endif %}
+  </div>
+</div>

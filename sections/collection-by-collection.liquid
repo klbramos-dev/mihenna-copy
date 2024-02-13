@@ -1,0 +1,71 @@
+{% assign collectionTitle = collection.title %}
+<div class="shop-by-filter-section">
+  <div class="page-width">
+    <ul class="shop-by-filter-list">
+      {% for block in section.blocks %}
+        {% if section.settings.heading != blank %}
+          {% if forloop.first %}
+            <li class="shop-by-first-list">
+              <p class="shop-by">{{ section.settings.heading }}</p>
+            </li>
+          {% endif %}
+        {% endif %}
+        {% assign getValue = block.settings.category-name %}
+        {% assign collection_handle = block.settings.collection %}
+        {% assign collection = collections[collection_handle] %}   
+        {% if collection_handle != blank %}
+          <li class="shop-by-filter-item{% if collectionTitle == collection.title %} isActive{% endif %}">
+            <a href="{{ collection.url }}">{{ collection.title }}</a>
+          </li>
+        {% else %}
+          {% if block.settings.category-name != blank %}
+            <li class="shop-by-filter-item{% if collectionTitle == getValue %} isActive{% endif %}">
+              <a href="{{ block.settings.category-link }}">{{ block.settings.category-name }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.collection_by_shop.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:sections.collection_by_shop.settings.heading.label"
+    }
+  ],  
+  "blocks": [
+    {
+      "type": "shop",
+      "name": "t:sections.collection_by_shop.blocks.shop.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.collection_by_shop.blocks.shop.settings.collection.label"
+        },
+        {
+          "type": "text",
+          "id": "category-name",
+          "label": "t:sections.collection_by_shop.blocks.shop.settings.category.label"
+        },
+        {
+          "type": "url",
+          "id": "category-link",
+          "label": "t:sections.collection_by_shop.blocks.shop.settings.category_link.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by Collection"
+    }
+  ]
+}
+{% endschema %}

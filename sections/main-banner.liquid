@@ -1,0 +1,82 @@
+{{ 'component-main-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="main_banner">
+    <div class="container">
+        <div class="banner_row">
+            <div class="row_content">
+                {%- if section.settings.heading != blank -%}
+                <h1>{{section.settings.heading}}</h1>
+                {%- endif -%}
+                {%- if section.settings.paragraph != blank -%}
+                <p>{{section.settings.paragraph}}</p>
+                {%- endif -%}
+                {%- if section.settings.button_text != blank -%}
+                <a href="{{section.settings.button_url}}">{{section.settings.button_text}}</a>
+                {%- endif -%}
+
+            </div>
+            <div class="row_image">
+                {%- if section.settings.desktop-image != blank -%}
+                <img src="{{ section.settings.desktop-image | img_url: "master" }}" alt="image" width="" height="auto" class="for-desktop">
+                {%- endif -%}
+                {%- if section.settings.mobile-image != blank -%}
+                <img src="{{ section.settings.mobile-image | img_url: "master" }}" alt="image" width="auto" height="auto" class="for-mobile">
+                {%- endif -%}
+
+            </div>
+        </div>
+    </div>
+</div>
+{%- if section.settings.mobile-image != blank -%}
+<div class="for-desktop svg_wave-img">
+    <img src="{{ section.settings.svg-image | img_url: "master" }}" alt="image" width="100%" height="auto">
+</div>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Main Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop-image",
+      "label": "Desktop Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "mobile-image",
+        "label": "Mobile Image"
+    },
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+    },
+    {
+        "type": "text",
+        "id": "paragraph",
+        "label": "Paragraph"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+    },
+    {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button Url"
+    },
+    {
+        "type": "image_picker",
+        "id": "svg-image",
+        "label": "Svg Image"
+    }
+
+  ],
+  "presets": [
+    {
+      "name": "Main Banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="sitemap-head-wrap sitemap-head-wrap--{{ section.id }}">
+  <div class="page-width page-width--narrow">
+    <h1 class="main-page-title page-title h0">
+      {{ page.title | escape }}
+    </h1>
+    <div class="rte">
+      {{ page.content }}
+      <h2>Collections</h2>
+      <ul>
+         {% for collection in collections %}
+            <li><a href="{{collection.url}}">{{collection.title}}</a></li>
+         {% endfor %}
+      </ul>
+      <h2 class="list-of-pages">Pages</h2>
+        <ul>
+          {% for link in linklists.footer-1-new.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}	
+        </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media (min-width: 750px) {
+    .sitemap-head-wrap--{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .sitemap-head-wrap--{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 50,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.mobile_padding_top",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.mobile_padding_bottom",
+      "default": 56
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,255 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "b7f8bc5e-acd9-47da-9c97-3b58e135465c": {
+      "type": "announcement-marquee",
+      "blocks": {
+        "text_xYNiE8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "USDA-Certified Organic Products"
+          }
+        },
+        "text_MqRNha": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Free Shipping on US Orders $50+"
+          }
+        },
+        "text_wyFmmC": {
+          "type": "text",
+          "settings": {
+            "title": "‘Tis the Week of Love | Enjoy 15% OFF Sitewide from Feb 7-13"
+          }
+        },
+        "text_bLaNkX": {
+          "type": "text",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_gqNmWp": {
+          "type": "text",
+          "settings": {
+            "title": "Limited Time Offer. Shop Now."
+          }
+        },
+        "text_NTtKBk": {
+          "type": "text",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_xYNiE8",
+        "text_MqRNha",
+        "text_wyFmmC",
+        "text_bLaNkX",
+        "text_gqNmWp",
+        "text_NTtKBk"
+      ],
+      "settings": {
+        "color_scheme": "scheme-56e5cab6-4eb4-41ab-8e1e-c89876772324",
+        "marquee-speed": 10
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "ea576ee2-beef-4219-bc01-ca993e523832": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Henna Freckle Kit",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_2.webp"
+          }
+        },
+        "3e52b0d2-1b05-40ed-8f1d-36975e0317fb": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Best Seller Henna Kit",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_3.webp"
+          }
+        },
+        "6d2c2c14-2745-46d3-a798-01eb502c929a": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Sampler Henna Kit",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_4.webp"
+          }
+        },
+        "ea3c725c-b732-4167-b551-8bcfbe91af45": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Henna Powder Kit",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_12.webp"
+          }
+        },
+        "58cef292-0095-4e56-a184-ec31e2fc1c73": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Henna Powder",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_13.webp"
+          }
+        },
+        "7b7d7d16-5800-4a2f-b299-9a5289e53e9c": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Henna Hair Dye",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_14.webp"
+          }
+        },
+        "d8e65a65-cc81-478b-8ea6-cee8acf6e3cf": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Aphrodite",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_15.webp"
+          }
+        },
+        "c21d1710-da94-4eca-986b-ef2323e27e64": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Athena",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_16_1.webp"
+          }
+        },
+        "9d76162d-eb72-4514-9c12-4b33cc4bbed1": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Blossom",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_17.webp"
+          }
+        },
+        "8bb2a45d-4860-49ab-8339-8a71334fcf7c": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Henna Cone",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_18.webp"
+          }
+        },
+        "fc198c2a-47cb-42f6-a6c6-85e0ddddd0d4": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Essential Oil - Tea Tree",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_19.webp"
+          }
+        },
+        "10998858-1c1e-4250-a2e5-d93062ef695f": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Coconut Oil",
+            "banner_image1": "shopify:\/\/shop_images\/Rectangle_24743_20.webp"
+          }
+        },
+        "shop_EHQtKe": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Jagua Powder",
+            "banner_image1": "shopify:\/\/shop_images\/jagua_powder.webp"
+          }
+        },
+        "shop_AqWkgt": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Jagua Gel",
+            "banner_image1": "shopify:\/\/shop_images\/jagua_gel_89c7f2fa-dc3c-4710-bcb5-f679232f88e8.webp"
+          }
+        },
+        "shop_qpwicw": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Jagua Tattoo Kit",
+            "banner_image1": "shopify:\/\/shop_images\/jagua_tattoo_kit_894b0b95-c427-4979-809c-148253082fbf.webp"
+          }
+        },
+        "shop_BRTJT7": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Haley",
+            "banner_image1": "shopify:\/\/shop_images\/RECTANGLE_mila-DIY-henna-stencil-design.webp"
+          }
+        },
+        "shop_9EeWFx": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Pearl",
+            "banner_image1": "shopify:\/\/shop_images\/RECTANGLE_Pearl-SH005-DIY-Henna-Stencil-3.webp"
+          }
+        },
+        "shop_jJz8Ay": {
+          "type": "shop",
+          "settings": {
+            "navigation_item": "Kids Henna Kit",
+            "banner_image1": "shopify:\/\/shop_images\/RECTANGLE_tween-henna-kit-tattoos.webp"
+          }
+        },
+        "b007ca30-0819-4027-a295-033e8ea1d5c4": {
+          "type": "learn",
+          "settings": {
+            "navigation_item": "Our Story",
+            "image": "shopify:\/\/shop_images\/Rectangle_24743_6277f1d6-bac9-4a12-bd64-f613835868c5.webp"
+          }
+        },
+        "f5180454-2ae6-4cec-b187-b208b71e848d": {
+          "type": "learn",
+          "settings": {
+            "navigation_item": "FAQ",
+            "image": "shopify:\/\/shop_images\/Rectangle_24743_1_fd4ca378-1c44-4aa0-9c4f-e68788e7475a-_1.webp"
+          }
+        },
+        "learn_R4t8JH": {
+          "type": "learn",
+          "settings": {
+            "navigation_item": "Blog",
+            "image": "shopify:\/\/shop_images\/RECTANGLE_3_6fd8b83b-29c3-4602-b193-bcb3bdc384db.webp"
+          }
+        }
+      },
+      "block_order": [
+        "ea576ee2-beef-4219-bc01-ca993e523832",
+        "3e52b0d2-1b05-40ed-8f1d-36975e0317fb",
+        "6d2c2c14-2745-46d3-a798-01eb502c929a",
+        "ea3c725c-b732-4167-b551-8bcfbe91af45",
+        "58cef292-0095-4e56-a184-ec31e2fc1c73",
+        "7b7d7d16-5800-4a2f-b299-9a5289e53e9c",
+        "d8e65a65-cc81-478b-8ea6-cee8acf6e3cf",
+        "c21d1710-da94-4eca-986b-ef2323e27e64",
+        "9d76162d-eb72-4514-9c12-4b33cc4bbed1",
+        "8bb2a45d-4860-49ab-8339-8a71334fcf7c",
+        "fc198c2a-47cb-42f6-a6c6-85e0ddddd0d4",
+        "10998858-1c1e-4250-a2e5-d93062ef695f",
+        "shop_EHQtKe",
+        "shop_AqWkgt",
+        "shop_qpwicw",
+        "shop_BRTJT7",
+        "shop_9EeWFx",
+        "shop_jJz8Ay",
+        "b007ca30-0819-4027-a295-033e8ea1d5c4",
+        "f5180454-2ae6-4cec-b187-b208b71e848d",
+        "learn_R4t8JH"
+      ],
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "new-header-menu-jagua",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "scheme-a5ca6b1e-9f4e-4c81-aeae-4776fe7b207a",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "b7f8bc5e-acd9-47da-9c97-3b58e135465c",
+    "header"
+  ]
+}

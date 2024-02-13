@@ -1,0 +1,111 @@
+{% assign count = 5 %}
+<div
+  class="bw-brandsMarquee color-{{ section.settings.color_scheme }} gradient overflow-hidden"
+  dataMarquee
+>
+  <div class="bw-brandsMarquee__wrapper bw-brandsMarquee__wrapper--{{ section.id }}">
+    {% for i in (1..count) %}
+      <div class="bw-brandsMarquee__innerImage">
+        {% for block in section.blocks %}
+          <p class="bw-brandsMarquee__heading">
+            {{ block.settings.title }}
+          </p>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .bw-brandsMarquee__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 8px;
+  }
+
+  .bw-brandsMarquee__wrapper--{{ section.id }} .bw-brandsMarquee__innerImage {
+    white-space: nowrap;
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: marquee {{ section.settings.marquee-speed }}s linear infinite;
+    align-items: stretch;
+  }
+
+  .bw-brandsMarquee__wrapper--{{ section.id }} .bw-brandsMarquee__innerImage .bw-brandsMarquee__heading {
+    padding: 0 20px;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+  .bw-brandsMarquee__wrapper--{{ section.id }} .bw-brandsMarquee__innerImage .bw-brandsMarquee__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .bw-brandsMarquee__wrapper--{{ section.id }} .bw-brandsMarquee__heading {
+    font-family: var(--font-secondary);
+    font-size: var(--font-p-16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; 
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .bw-brandsMarquee__wrapper--{{ section.id }} .bw-brandsMarquee__heading {
+      font-size: var(--font-p-14);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Announcement Marquee",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "accent-1"
+    },
+    {
+      "type": "range",
+      "id": "marquee-speed",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "sec",
+      "label": "t:sections.announcement_marquee.settings.marquee-speed.label",
+      "default": 7
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "t:sections.announcement_marquee.blocks.text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.announcement_marquee.blocks.text.settings.title.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Marquee"
+    }
+  ]
+}
+{% endschema %}
